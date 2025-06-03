@@ -1,4 +1,4 @@
-package GetAllEmployees;
+package NormalAPI;
 
 import org.testng.annotations.Test;
 
@@ -45,7 +45,7 @@ public class GetEmployees {
 
 	}
 
-	@Test(enabled = true)
+	@Test(enabled = false)
 
 	public void updateemployees() {
 
@@ -61,6 +61,22 @@ public class GetEmployees {
 		System.out.println(respose.getStatusLine());
 
 		System.out.println(respose.asPrettyString());
+
+	}
+
+	@Test(enabled = true)
+
+	public void deleteEmployee() {
+
+		RestAssured.baseURI = "http://localhost:3000/";
+
+		RequestSpecification requestspecification = RestAssured.given();
+
+		Response response = requestspecification.request(Method.DELETE, "data/5");
+
+		System.out.println(response.getStatusLine());
+
+		System.out.println(response.asPrettyString());
 
 	}
 
