@@ -1,0 +1,29 @@
+{
+  "store": {
+    "book": [
+      {
+        "category": "reference",
+        "author": "Nigel Rees",
+        "title": "Saying of the Century",
+        "price": 5.52
+      },
+      {
+        "category": "fiction",
+        "author": "Unknown Author",
+        "title": "Mystery Novel",
+        "price": 17.563
+      },
+      {
+        "category": "literature",
+        "author": "Anonymous",
+        "title": "Classic Tales",
+        "price": 11.4725
+      }
+    ],
+    "bicycle": {
+      "color": "red",
+      "price": 8.545
+    }
+  },
+  "expensive": 10
+}
